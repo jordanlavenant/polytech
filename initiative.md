@@ -15,3 +15,6 @@ Fin de semaine (vendredi 19/09)
 [https://www.coursera.org/professional-certificates/aws-cloud-solutions-architect](https://www.coursera.org/professional-certificates/aws-cloud-solutions-architect)
 
 [https://www.coursera.org/learn/audio-signal-processing](https://www.coursera.org/learn/audio-signal-processingj  bb)
+
+Solidworks
+
