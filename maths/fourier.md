@@ -10,7 +10,6 @@ $T$ : période de la fonction $f(t)$
 - $f(t)$ est intégrable sur un intervalle de longueur $T$
 - $f(t)$ est continue par morceaux
 
-
 ## Paire ou impaire
 
 - Paire : $f(-t) = f(t)$
@@ -32,11 +31,11 @@ _En gros symétrique par rapport à l'origine._
 
 Si $f(t)$ est **paire**, alors :
 
-$a_0 = \frac{4}{T} \int_0^{T/2} f(t) dt$ 
+$a_0 = \frac{4}{T} \int_0^{T/2} f(t) dt$
 
 _On calcule que la moitié de l'aire, et on multiplie par 2._
 
-Si $f(t)$ est **impaire**, alors : 
+Si $f(t)$ est **impaire**, alors :
 
 $a_0 = 0$.
 
