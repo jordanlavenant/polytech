@@ -31,7 +31,11 @@ _En gros symétrique par rapport à l'origine._
 
 Si $f(t)$ est **paire**, alors :
 
-$a_0 = \frac{4}{T} \int_0^{T/2} f(t) dt$
+$a_0 = \frac{1}{T} \int_{-T/2}^{T/2} f(t) dt$
+
+ou
+
+$a_0 = \frac{2}{T} \int_{0}^{T/2} f(t) dt$
 
 _On calcule que la moitié de l'aire, et on multiplie par 2._
 
@@ -41,15 +45,15 @@ $a_0 = 0$.
 
 _Car elle s'annule sur la période._
 
-Sinon :
-
-$a_0 = \frac{2}{T} \int_{-T/2}^{T/2} f(t) dt$
-
 #### Reste des coefficients pour $n \geq 1$ :
 
-$a_n = \frac{2}{T} \int_0^T f(t) \cos{(nwt)} dt$
+$a_n = \frac{2}{T} \int_{-T/2}^{T/2} f(t) \cos{(nwt)} dt$
 
-$b_n = \frac{2}{T} \int_0^T f(t) \sin{(nwt)} dt$
+ou
+
+$a_n = \frac{4}{T} \int_{0}^{T/2} f(t) \cos{(nwt)} dt$
+
+$b_n = \frac{2}{T} \int_{-T/2}^{T/2} f(t) \sin{(nwt)} dt$
 
 avec :
 
