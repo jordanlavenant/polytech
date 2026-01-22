@@ -152,6 +152,171 @@ Le stock permet de :
 ![Financement1](../assets/financement1.jpeg)
 ![Financement2](../assets/financement2.jpeg)
 
+### Bilan
+
+- Actif _(tout ce que je possède)_
+  - Actif immobilisé _(LT)_
+    - Outils de production
+    - Matériels
+    - Brevets
+    - Fonds de commerce
+  - Actif circulant _(MT & CT)_
+    - Créances clients
+    - Trésorerie (disponibilités)
+      - Compte bancaire (scriptural)
+      - Caisse (espèces)
+    - Stocks
+- Passif _(tout ce que je dois)_
+  - Capitaux propres _(LT)_
+    - Capital social
+    - Autofinancement _(dégagement du bénéfices, pour projets / machines, etc.)_
+  - Dettes _(MT & CT)_
+    - Dettes fournisseurs
+    - Emprunts bancaires
+    - Concours bancaires courant (découvert)
+
+### Compte de résultat
+
+On dit dans un compte de résultat, que les **charges et produits** sont classés par **nature**.
+
+- Exploitation financier _(exploitation)_
+- Exceptionnel _(évènements exceptionnels)_
+
+### Analyse financière
+
+**Analyse financière :** L'étude de la santé financière d'une entreprise. Comprendre comment est réparti son patrimoine, et quelles sont ses méthodes de financements.
+
+#### Indicateurs
+
+- **Fond de Roulement Net Global _(FRNG)_ :** Ressources dont dispose une entreprise à long terme _(Passifs permanents - Actifs permanents)_
+- **Besoin en Fonds de Roulement _(BFR)_ :** Fonds nécessaire à une entreprise pour financer son exploitation _((Stocks + créances) - dettes circulantes)_
+- **Trésorerie nette _(TN)_ :** Liquidités financières disponibles à court terme _(Fond de roulement - Besoin en fonds de roulement)_
+
+On analyse le **bilan** de l'entreprise _(cf. Annexe 4 polycopié)_
+
+![Bilan](../assets/bilan.jpeg)
+
+#### $FR = FRNG =$ Ressources stables - Emplois stables
+
+- Ressources stables : $330000$ _(Capitaux propres + Dettes MLT)_
+- Emplois stables : $291000$ _(Actif immobilisé)_
+
+$ => FR = 330000 - 291000 = 42000$
+
+Excedent ressources LT $=>$ couvrir BFR ?
+
+#### $BFR =$ Besoins - Ressources
+
+- Besoins ? : $47000$ _(stocks et créances)_
+- Ressources ? : $12000$ _(Dettes exploitation)_
+
+$ => BFR = 47000 - 12000 = 35000$
+
+$BFR > 0 =$ Besoin !! _(Mauvais sauf si $FR$ > $BFR$)_
+
+$BFR < 0 =$ Ressources
+
+$BFR$ est couvert par l'excedent des ressources LT
+
+#### $T = FR - BFR$
+
+$ => T = 42000 - 35000 = 7000$
+
+#### Lecture de la trésorerie : Trésorerie active - Trésorerie passive
+
+- Trésorerie active : $7000$ _(Banque)_
+- Trésorerie passive : $0$ _(Concours bancaires courant)_
+
+$ => T = 7000 - 0 = 7000$
+
+![Analyse financière](../assets/analyse_financiere.png)
+
+### Besoin de financement des investissements
+
+Divisé en **3 catégories :**
+
+- Investissements matériels
+- Investissements incorporels
+- Investissements financiers
+
+![Besoin de financement](../assets/besoin_financement.jpeg)
+
+Par destination
+
+- **Capacité :** Diversification / Internationalisation
+- **Modernisation :** Nouvelle tech et amélioration
+- **Productivité :** Changement de machines / Formations / Production accrue $=>$ Domination par les coûts
+
+#### Sources de financement
+
+- Capital social
+- Autofinancement
+- Emprunts bancaires
+- Crédit-bail _(contrat de location avec option d'achat)_
+
+### Besoin de financement de l'exploitation
+
+- Stocks
+- Créances clients
+- Dettes
+
+#### Sources de financement
+
+- Capitaux permanents : le fond de roulement
+- Des dettes à court terme : dettes fournisseurs, concours bancaires courants
+- L'affacturage
+  - Vente des créances clients à un établissement financier _(Factor)_
+- Escompte commercial : avance de sommes dues par la banque. ⚠️ A faire sur créances fiables
+
+### La fonction des ressources humaines
+
+#### Gestion prévisionnelle des emplois et des compétences _(GPEC)_
+
+Elle permet à une entreprise de **prévoir et anticiper**, et améliorer la QVCT _(Qualité de Vie au Travail)_ :
+
+- Quels emplois aura-t-elle besoin demain ?
+- Quelles compétences seront nécessaires ?
+- Quelles formations seront nécessaires ?
+
+La notion de **compétences**
+
+- Le savoir _(connaissances théoriques)_
+- Le savoir-faire _(expériences pratiques)_
+- Le savoir-être _(rigueur, communication)_
+
+La démarche **GPEC**
+
+- Diagnostic : _identifier les compétences, points forts et fragilités_
+- Analyse des écarts : _besoins vs ressources_
+- Plan d'action : _recrutement, formation, mobilité_
+
+**Enjeux** stratégiques
+
+- Accompagner les évolutions digitales
+- Anticiper la pyramide des ages
+- Gérer les effectifs de façon prospective
+- Renouveler le management
+
+Gestion de **carrières et mobilité**
+
+- Mobilité verticale : _promotion, évolution hiérarchique_
+- Mobilité horizontale : _changement de poste au même niveau_
+- Mobilité géographique : _changement de site ou d'établissement_
+
+La **GPEC** n'est pas seulement un outil RH, mais c'est un **levier de performance**.
+
+Elle permet d'**anticiper les besoins futurs** de l'organisation, tout en répondant aux **aspirations des salariés**.
+
+**Clé du succès :** un dialogue constant entre direction et salariés.
+
+#### RSE et éthique d'entreprise
+
+Démarches
+
+- Environnemental : _agir pour le climat et la transition vers une économie bas-carbone_
+- Social : _renforcer la cohésion et l'inclusion sociale_
+- Sociétal : _agir en faveur des territoires et des communautés_
+
 ## Annexes
 
 _Diagramme d'Ishikawa pour la recherche et les causes de défauts_
