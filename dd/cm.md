@@ -79,6 +79,16 @@ La part des énergies fossiles dans les énergies primaires consommées deans le
 
 ## Enjeux liés au climat et à l'énergie
 
+**Durée de réserve : (nb année)**
+
+$\frac{\text{quantité de ressource disponible (Mt/an)}}{\text{taux de production (consommation) (Mt/an)}}$
+
+**Energie primaire :** énergie disponible dans la nature avant toute transformation (ex: pétrole brut)
+
+**Energie finale :** énergie transformée
+
+**Energie utile :** énergie utilisé pour une application donnée (ex: carburant pour faire avancer une voiture)
+
 ## Fresque du Climat et Ateliers Shift Project
 
 ## Bilan Carbone - Approche théorique et pratique
