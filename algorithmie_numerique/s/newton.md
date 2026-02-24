@@ -1,4 +1,4 @@
-# Méthode de Newton
+# 1. Méthode de Newton
 
 Permet de calculer une solution approchée de $f(x) = 0$
 
