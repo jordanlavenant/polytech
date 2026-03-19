@@ -93,6 +93,16 @@ $\frac{\text{quantité de ressource disponible (Mt/an)}}{\text{taux de productio
 
 ## Bilan Carbone - Approche théorique et pratique
 
+Comptabilité des GES tenant compte de l'ensemble du cycle de vie des produits et services.
+
+**BEGES :** Bilan émission de gaz à effet de serre
+
+Concentration des gaz à effet de serre principaux :
+
+- CO2
+- Methane
+- Protoxyde d'azote
+
 ## Atelier 2 tonnes
 
 ## Transition sobriété énergétique
