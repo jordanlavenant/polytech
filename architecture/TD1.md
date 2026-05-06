@@ -328,6 +328,5 @@ ADD R0, R1 LSL#1
 #### c
 
 ```
-MOV R2, R1 LSL#5
-SUB R2, R2, R1
+RSB R2, R1, R1 LSL#5
 ```

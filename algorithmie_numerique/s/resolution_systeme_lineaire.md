@@ -43,7 +43,7 @@ $x_1 = \frac{b_1}{l_{11}}$
 
 $x_2 = \frac{b_2 - l_{21}x_1}{l_{22}}$
 
-$x_i = \frac{i}{l_{ii}} (b_i - \sum^{i-1}_{j=1} l_{ij}x_j )$
+$x_i = \frac{1}{l_{ii}} (b_i - \sum^{i-1}_{j=1} l_{ij}x_j )$
 
 Algorithme de substitution avant (ou descente). (Forward Substitution).
 
@@ -74,7 +74,7 @@ $\begin{pmatrix}
 0 & 0 & 3
 \end{pmatrix}$
 
-$x_i = \frac{i}{u_{ii}} (b_i - \sum^{n}_{j=i+1} u_{ij}x_j )$
+$x_i = \frac{1}{u_{ii}} (b_i - \sum^{n}_{j=i+1} u_{ij}x_j )$
 
 #### Complexité (en fflops)
 
@@ -316,3 +316,73 @@ $P = \begin{pmatrix}
 $
 
 ## 2. Méthodes itératives
+
+### Principe
+
+Intérêt lorsque $n$ est grand (la dimension) et lorsque $A$ est creuse (matrice avec plein de $0$)
+
+On veut toujours résoudre :
+
+$$Ax = b$$
+
+On crée une suite de vecteurs $(x^{(k)})$ qui va converger vers la solution $x$ de $Ax = b$
+
+- $A$ sera utilisé pour faire des produits matrice-vecteur.
+- efficacité mesurée par vitesse de convergence
+
+### Méthode
+
+On écrit $A$ sous la forme $A = M - N$, avec $M$ et $N$ à choisir, et $M$ inversible.
+
+Alors :
+
+$$Ax = b \Leftrightarrow (M-N)x = b \Leftrightarrow Mx = Nx + b$$
+
+#### Schéma itératif
+
+$x^{(0)}$ donné, et on définit la récurrence :
+
+$$Mx^{k+1} = Nx^{k} + b$$
+
+Pour passer de $x^{(k)}$ à $x^{(k+1)}$, on résout un système linéaire :
+
+$$Mx = c$$
+
+avec $c = Nx^{(k)} + b$
+
+Le schéma itératif s'écrit aussi :
+
+$$x^{(k+1)} = M^{-1}Nx^{(k)} + M^{-1}b$$
+
+Condition d'arrêt :
+
+$$||x^{(k+1)} - x^{k}|| < \epsilon$$
+
+avec $\epsilon$ donné
+
+#### Exemples
+
+_(cf. 4.3 du pdf)_
+
+![Matrice A](../assets/exemple_4_3.png)
+
+$M = D$ et $N = -(E + F)$
+
+D'après le schéma itératif
+
+$$Mx^{k+1} = Nx^{k} + b$$
+
+Donc on remplace :
+
+$$Dx^{k+1} = b -(E+F)x^{k}$$
+
+On obtient :
+
+![itération k+1](../assets/exemple_4_3_1.png)
+
+![composantes](../assets/exemple_4_3_2.png)
+
+### Convergence
+
+- Si $A$ est diagonale dominante, alors les méthodes de Jacobi et de Gauss-Seidel convergent.
+- Si $A$ est $SPD$ alors la méthode de Gauss-Seidel converge quelque soit $x^{(0)}$
