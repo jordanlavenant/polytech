@@ -386,3 +386,32 @@ On obtient :
 
 - Si $A$ est diagonale dominante, alors les méthodes de Jacobi et de Gauss-Seidel convergent.
 - Si $A$ est $SPD$ alors la méthode de Gauss-Seidel converge quelque soit $x^{(0)}$
+
+## Récapitulatif
+
+Résolution de systèmes linéaire du type $Ax = B$
+
+$\rightarrow$ résolution directe = $factoLU$
+
+$\rightarrow$ résolution itératives (Jacobi / Gauss Seidel)
+
+- Matrice à diagonale dominante
+- Arrêt / convergence / tolérence / seed
+
+$Ax = B$
+
+$(M - N)x = B$
+
+$Mx - Nx = B$
+
+$Mx = Nx + B$
+
+$x = M^{-1}Nx + M^{-1}b$
+
+⚠️ Il faut aucun $0$ sur la diagonale !!
+
+---
+
+$x^{k+1} = M^{-1}Nx^{(k)} + M^{-1}b$
+
+Jacobi: $A = D + E + F$
