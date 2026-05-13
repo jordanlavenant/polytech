@@ -132,3 +132,9 @@ $$\frac{U^{k+1} - U^{(k)}}{\Delta t} = - \frac{1}{h^2} MU^{(k+1)} = U^{(k)}$$
 On obtient $U^{(k+1)}$ par résolution du système linéaire avec $U^k$ comme second membre.
 
 $I + \frac{\Delta t}{h^2}M$ comme matrice.
+
+## Exercices
+
+### Exercice 1
+
+![exercice1](../assets/exercice1.png)

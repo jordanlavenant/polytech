@@ -110,7 +110,7 @@ Etiquette : $31 - 15 - 5 = 11$ bits (ETIQUETTE)
 
 ### 2.1
 
-8 Mio $= 2^{13}$
+8 Kio $= 2^{13}$
 
 #### 1er cas
 
@@ -120,7 +120,7 @@ $\rightarrow 2^{13} / 2^5 = 2^{8}$ lignes $\rightarrow$ 8 bits d'adresse (INDEX)
 
 | ETIQUETTE | INDEX | ADDR |
 | --------- | ----- | ---- |
-|           | 8     | 5    |
+| 19        | 8     | 5    |
 
 #### 2e cas
 
@@ -134,11 +134,103 @@ $\rightarrow 2^8 / 2^1 = 2^{7}$ lignes $\rightarrow$ 7 bits d'adresse (INDEX)
 
 | ETIQUETTE | INDEX | ADDR |
 | --------- | ----- | ---- |
-|           | 7     | 5    |
+| 20        | 7     | 5    |
+
+### 2.2
+
+Le cache peut stocker 8 Kio octets organisé en blocs de **32 octets**.
+
+Float = 32 bits = **4 octets**
+
+$\rightarrow$ Donc par bloc, on peut stocker **8 floats**.
+
+---
+
+- ADDR $2^5$ (5 emplacements)
+- INDEX $2^8$ (8 emplacements)
+
+| X   | 0     | 0    | 0      | 0     |
+| --- | ----- | ---- | ------ | ----- |
+|     | 000[0 | 0000 | 000][0 | 0000] |
+
+| Y   | 4     | 0    | 0      | 0     |
+| --- | ----- | ---- | ------ | ----- |
+|     | 010[0 | 0000 | 000][0 | 0000] |
+
+| Z   | 8     | 0    | 0      | 0     |
+| --- | ----- | ---- | ------ | ----- |
+|     | 100[0 | 0000 | 000][0 | 0000] |
+
+| X1  | C     | 0    | 0      | 0     |
+| --- | ----- | ---- | ------ | ----- |
+|     | 110[0 | 0000 | 000][0 | 0000] |
+
+| Y1  | 0     | 0    | 0      | 0     |
+| --- | ----- | ---- | ------ | ----- |
+|     | 000[0 | 0000 | 000][0 | 0000] |
+
+| X2  | 4     | 0    | 0      | 0     |
+| --- | ----- | ---- | ------ | ----- |
+|     | 010[0 | 0000 | 000][0 | 0000] |
+
+| Y2  | 8     | 0    | 0      | 0     |
+| --- | ----- | ---- | ------ | ----- |
+|     | 100[0 | 0000 | 000][0 | 0000] |
+
+$X = Y = Z = X1 = Y1 = X2 = Y2$
+
+Donc les variables sont **TOUTES** à la même position du bloc dans le cache.
+
+#### 1.
+
+    for (i = 0; i < N; ++i)
+    {
+        s += X[i] * Y[i]
+    }
+
+$2$ défauts de cache / itération car $X[i]$ et $Y[i]$ sont sur la même ligne du cache.
+
+$\rightarrow 2D/it$
+
+#### 2.
+
+    for (i = 0; i < N; ++i)
+    {
+        s1 += X1[i] + Y1[i]
+        s2 += X2[i] + Y2[i]
+    }
+
+$\rightarrow 4D/it$
+
+#### 3.
+
+    for (i = 0; i < N; ++i)
+    {
+        s1 += X1[i] + Y1[i]
+    }
+
+    for (i = 0; i < N; ++i)
+    {
+        s2 += X2[i] + Y2[i]
+    }
+
+$\rightarrow 2D/it$
+
+#### 4.
+
+    for (i = 0; i < N; ++i)
+    {
+        s1 += X[i] + Y[i]
+        s2 += X[i] + Z[i]
+    }
+
+$\rightarrow 4D/it$
 
 ---
 
 ## Exercice 3
+
+### 3.1
 
 **Mémoire principale :** 1 Mio $= 2^{20}$
 
@@ -157,3 +249,26 @@ Etiquette : $20 - 4 - 6 = 10$ bits (ETIQUETTE)
 | ETIQUETTE | INDEX | ADDR |
 | --------- | ----- | ---- |
 | 10        | 4     | 6    |
+
+### 3.2
+
+#### Données
+
+On lit 4352 octets, 10 fois.
+
+Accès à 1 bloc = 1 unité + 10 si le bloc n'est pas dans le cache.
+
+#### Temps sans cache
+
+- Accès total = $4352 * 10 = 43 520$ accès
+- Sans cache, chaque accès coûte $1 + 10 = 11$ unités
+- Temps total sans cache $43520 * 11 = 478720$ unités.
+
+$\rightarrow$ 478 720 unités
+
+#### Temps avec cache
+
+$\frac{4352}{64} = 68$ lignes de cache
+
+- 1ère itération : $68$ défauts de cache (car on créer tout).
+- $n$-itération : $4 * 5$ défauts de cache (4 premiers ensemble ont 5 défauts de cache).

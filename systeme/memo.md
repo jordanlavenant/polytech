@@ -1,5 +1,7 @@
 # Memo système
 
+## DONNER DES EXEMPLES JORDNA
+
 Structure de stockage de données : **Pile** & **Tas**
 
 **Tas :** variables allouées dynamiquements, partagé par les threads et processus.
