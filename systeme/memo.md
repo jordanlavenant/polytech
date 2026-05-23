@@ -1,7 +1,5 @@
 # Memo système
 
-## DONNER DES EXEMPLES JORDNA
-
 Structure de stockage de données : **Pile** & **Tas**
 
 **Tas :** variables allouées dynamiquements, partagé par les threads et processus.
@@ -19,8 +17,6 @@ Structure de stockage de données : **Pile** & **Tas**
 **Thread :** Unité d'ordonnancement, qui dispose de sa pile et de son contexte d'appel.
 
 **Sémaphore :** Contient une liste de processus en attente d'une ressource, d'une fonction `Prendre` et `Vendre`, devant être appelée par tout processus avant d'entrer / terminer sa section critiquer pour "tenter" de prendre / rendre la ressource pour d'autres processus.
-
-**Mutex :**
 
 **Tube :** Un tube est un canal de communication entre 2 processus, qui comportent 2 frichiers, afin d'écrire et lire des données.
 
